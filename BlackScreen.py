@@ -17,8 +17,8 @@ while True:
     f = np.where(f == 0, image, f)
     cv2.imshow("video", frame)
     cv2.imshow("mask", f) 
-    if cv2.waitKey(1) & 0xFF == ('q'):
-        break
+    cv2.waitKey(1) 
+
 
 
 video.release() 
